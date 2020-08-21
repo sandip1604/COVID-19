@@ -1,4 +1,4 @@
-# COVID-19 prediction using Decision Tree Regressor
+ COVID-19 prediction using Decision Tree Regressor 
 
 Since the COVID-19 was declared as pendamic, Majority of nations have started bracing themselves for once in a generation health crises. Irrespective of wether the nation is devleoped or developing, everyone has employed there last resorts to take the breakouts under control.
 
@@ -20,7 +20,7 @@ We, group fo students of Data sceince class at Columbia University have develope
     2. Data is split into test set and train set, maing sure data is evenly distributed to the range of days past the onset of community spread. So that no country has basied test and train sets.
     
 ## One Hot Coding:
-    Important conisderation we took into accunt was on how we incorporated **label of Country** for the model. Since contries are catagorical data and its distribution has not relation with the mathematics, We wisely chose one hot coding. To explore deeper about one-hot coding explore the following link: https://www.datacamp.com/community/tutorials/categorical-data.
+    Important conisderation we took into accunt was on how we incorporated **label of Country** for the model. Since contries are catagorical data and its distribution has not relation with the mathematics, We wisely chose one hot coding. To explore deeper about one-hot coding explore the following link: [One hot coding](https://www.datacamp.com/community/tutorials/categorical-data).
     
 ## Model:
     There are various ML strategies that could be equally good and can produce acceptable results. We chose Decision Tree Regressor. Reason behind this is due to its growing capacity with the number of features. Here we had 13 features ranging from **GDP per capita, Healtcare expentirue of the nation** to **Population density and % Urban Population**. In such cases Decision tree Regressor can be highly capble. 
