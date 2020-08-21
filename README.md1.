@@ -25,6 +25,8 @@ Testing and validation sets:
  Model:
     There are various ML strategies that could be equally good and can produce acceptable results. We chose Decision Tree Regressor. Reason behind this is due to its growing capacity with the number of features. Here we had 13 features ranging from GDP per capita, Healthcare expenditure of the nation to Population density and % Urban Population. In such cases Decision tree Regressor can be highly capable.
     
+    File for the ML model: data science project_COVID-19.py 
+    
  Avoiding Overfit
     To avoid overfit, We pruned the leaves until the difference in accuracy did not surpassed our threshold.
     
