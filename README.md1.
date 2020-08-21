@@ -1,0 +1,41 @@
+# COVID-19 prediction using Decision Tree Regressor
+
+Since the COVID-19 was declared as pendamic, Majority of nations have started bracing themselves for once in a generation health crises. Irrespective of wether the nation is devleoped or developing, everyone has employed there last resorts to take the breakouts under control.
+
+During, the age of data, It would rather be useful to learn from situation around the world to prepare for the worst.
+
+We, group fo students of Data sceince class at Columbia University have developed a framework of Machine Learning model that can be scaled to the current scenario whenever this model is used. 
+
+## **Details of our model are as follow:**
+
+## **Data:** 
+    1. Data is used from various dashboards that monitors COVID-19 statistics like John Hopkins, Worldometer, NY Times.
+    2. All the Data are saved in a .CSV file latest to the date of project. 
+    3. Data is cleaned and formalised into a proper dataset by removing insocnsitancy in Names, missing data and human errors while logging.
+    
+   **File for cleaned data:**
+    
+## **Testing and validation sets:**
+    1. Data is manipulated to incorporate onset of Local transmission, setting up 10 confirmed cases as the benchmark after which community spread is triggered. This is just based on human intiution and can be considered as hyper parameter.
+    2. Data is split into test set and train set, maing sure data is evenly distributed to the range of days past the onset of community spread. So that no country has basied test and train sets.
+    
+## **One Hot Coding:**
+    Important conisderation we took into accunt was on how we incorporated **label of Country** for the model. Since contries are catagorical data and its distribution has not relation with the mathematics, We wisely chose one hot coding. To explore deeper about one-hot coding explore the following link: https://www.datacamp.com/community/tutorials/categorical-data.
+    
+## **Model:**
+    There are various ML strategies that could be equally good and can produce acceptable results. We chose Decision Tree Regressor. Reason behind this is due to its growing capacity with the number of features. Here we had 13 features ranging from **GDP per capita, Healtcare expentirue of the nation** to **Population density and % Urban Population**. In such cases Decision tree Regressor can be highly capble. 
+    
+## **Avoiding Overfit**
+    To avoid overfit, We pruned the leaves until the difference in accuracy didnt surpassed aour threshold. 
+    
+## ** Model Parameters**
+    Depth of the tree : 49
+    Min. samples per leaf: 7
+    Min. sample split: 3
+    
+## ** Results:**
+    We used the metrics of R2 score and explained variance to measure the performance of the Model
+    R2 score achieved is 0.91
+    explained Variance score is 0.89
+    
+  
